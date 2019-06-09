@@ -1,8 +1,9 @@
 ﻿@using Template_RealEstate_20052019.Areas.FrontEnd.Models
 @using Template_RealEstate_20052019.Extensions
-@model List<Utility>
+@using Template_RealEstate_20052019.Models
+@model GridModel<Utility>
 
-@if (Model != null && Model.Any())
+@if (Model?.Data != null && Model.Data.Any())
 {
     <!-- Start Service area -->
     <div id="utility" class="section-padding wow fadeIn delay-05s">
@@ -17,7 +18,7 @@
             <div class="row text-center">
                 <div class="services-contents">
                     <!-- Start Left services -->
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.Data)
                     {
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="about-move">
@@ -40,4 +41,3 @@
     </div>
     <!-- End Service area -->
 }
-

@@ -6749,6 +6749,12 @@
     <Content Update="Areas\BackEnd\Views\Policy\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Areas\BackEnd\Views\Utility\Edit.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\BackEnd\Views\Utility\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Areas\FrontEnd\Views\Policy\Detail.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -108,3 +108,5 @@ D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug
 D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug\netcoreapp2.1\Template_RealEstate_20052019.dll
 D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug\netcoreapp2.1\Template_RealEstate_20052019.pdb
 D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug\netcoreapp2.1\Template_RealEstate_20052019.csproj.CopyComplete
+D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug\netcoreapp2.1\Razor\Areas\BackEnd\Views\Utility\Edit.g.cshtml.cs
+D:\Projects\Template_RealEstate_050602019\Template_RealEstate_20052019\obj\Debug\netcoreapp2.1\Razor\Areas\BackEnd\Views\Utility\Index.g.cshtml.cs
