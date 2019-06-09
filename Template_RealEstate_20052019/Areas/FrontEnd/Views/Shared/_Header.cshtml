@@ -1,23 +1,41 @@
-﻿<div id="preloader"></div>
+﻿@using Template_RealEstate_20052019.Areas.FrontEnd.Models
+@using Microsoft.Extensions.Options
+@inject IOptions<ProjectInformation> projectInformation
 
-<header>
-    <div id="sticker" class="header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <nav class="navbar navbar-default">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+<div class="header">
+    <div class="bg-color">
+        <header id="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @*<a class="navbar-brand" href="#">Ba<span class="logo-dec">ker</span></a>*@
+                    </div>
+                    @await Component.InvokeAsync("Menu")
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="banner-info text-center wow fadeIn delay-05s">
+                        <h1 class="bnr-title">@projectInformation.Value.ProjectName</h1>
+                        <h2 class="bnr-sub-title">@projectInformation.Value.Address</h2>
+                        <p class="bnr-para">@projectInformation.Value.ProjectDescription</p>
+                        <div class="brn-btn">
+                            <a href="#register" class="btn btn-download">Đăng ký nhận thông tin dự án</a>
+                            <a href="#overview" class="btn btn-more">Tổng quan</a>
                         </div>
-                        @await Component.InvokeAsync("Menu")
-                    </nav>
+                        <div class="overlay-detail">
+                            <a href="#overview"><i class="fa fa-angle-down"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+</div>

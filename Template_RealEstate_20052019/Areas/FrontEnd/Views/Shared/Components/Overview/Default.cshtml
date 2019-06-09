@@ -3,97 +3,95 @@
 
 @if (Model != null)
 {
-    <!-- Start About area -->
-    <div id="overview" class="area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>Tổng quan dự án</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- single-well start-->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="well-left">
-                        <div class="single-well">
-                            <a href="#">
-                                <img src="@Model.Image" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- single-well end-->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="well-middle">
-                        <div class="single-well">
-                            <a href="#">
-                                <h4 class="sec-head">@Model.ProjectName</h4>
-                            </a>
-                            @if (!string.IsNullOrEmpty(Model.ProjectSlogan))
-                            {
-                                <p>
-                                    @Model.ProjectSlogan
-                                </p>
-                            }
-                            <ul>
-                                @if (!string.IsNullOrEmpty(Model.InvestorName))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Chủ đầu tư: @Model.InvestorName
-                                    </li>
-                                }
-
-                                @if (!string.IsNullOrEmpty(Model.Supplier))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Nhà phân phối: @Model.Supplier
-                                    </li>
-                                }
-
-                                @if (!string.IsNullOrEmpty(Model.Address))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Vị trí: @Model.Address
-                                    </li>
-                                }
-
-                                @if (!string.IsNullOrEmpty(Model.Area))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Diện tích: @Model.Area
-                                    </li>
-                                }
-
-                                @if (!string.IsNullOrEmpty(Model.FloorArea))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Diện tích mặt sàn: @Model.FloorArea
-                                    </li>
-                                }
-
-                                @if (!string.IsNullOrEmpty(Model.ConstructionArea))
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Diện tích xây dựng: @Model.ConstructionArea
-                                    </li>
-                                }
-
-                                @if (Model.Scale != null)
-                                {
-                                    <li>
-                                        <i class="fa fa-check"></i> Quy mô: @Html.Raw(Model.Scale.Description)
-                                    </li>
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End col-->
+<section id="overview" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="service-title pad-bt15">Tổng quan</h2> 
+                <p class="sub-title pad-bt15">@Model.Slogan</p>
+                <hr class="bottom-line">
             </div>
         </div>
+        <div class="row">
+            <!-- single-well start-->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="blog-sec">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="@Model.Image" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single-well end-->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="well-middle">
+                    <div class="single-well">
+                        <div class="blog-info">
+                            <h2>@Model.ProjectName</h2>
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.ProjectSlogan))
+                        {
+                            <p>
+                                @Model.ProjectSlogan
+                            </p>
+                        }
+                        <ul>
+                            @if (!string.IsNullOrEmpty(Model.InvestorName))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Chủ đầu tư: @Model.InvestorName
+                                </li>
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.Supplier))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Nhà phân phối: @Model.Supplier
+                                </li>
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.Address))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Vị trí: @Model.Address
+                                </li>
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.Area))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Diện tích: @Model.Area
+                                </li>
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.FloorArea))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Diện tích mặt sàn: @Model.FloorArea
+                                </li>
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.ConstructionArea))
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Diện tích xây dựng: @Model.ConstructionArea
+                                </li>
+                            }
+
+                            @if (Model.Scale != null)
+                            {
+                                <li>
+                                    <i class="fa fa-check"></i> Quy mô: @Html.Raw(Model.Scale.Description)
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End col-->
+        </div>
     </div>
-    <!-- End About area -->
+</section>
 }
 

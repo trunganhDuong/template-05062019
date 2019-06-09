@@ -6,7 +6,7 @@
 
 @if (Model != null)
 {
-    <div class="blog-page area-padding">
+    <div id="detail" class="section-padding wow fadeIn delay-05s">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    @await Component.InvokeAsync("RecentPost")
+                    @await Component.InvokeAsync("RecentPost", false)
                 </div>
 
             </div>
