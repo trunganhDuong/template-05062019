@@ -85,5 +85,82 @@
       "renameLocals": true
     },
     "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/contactform.min.js",
+    "inputFiles": [
+      "wwwroot/js/contactform.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/lib/knob/jquery.knob.min.js",
+    "inputFiles": [
+      "wwwroot/lib/knob/jquery.knob.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/lib/parallax/parallax.min.js",
+    "inputFiles": [
+      "wwwroot/lib/parallax/parallax.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/lib/nivo-slider/js/jquery.nivo.slider.min.js",
+    "inputFiles": [
+      "wwwroot/lib/nivo-slider/js/jquery.nivo.slider.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/lib/appear/jquery.appear.min.js",
+    "inputFiles": [
+      "wwwroot/lib/appear/jquery.appear.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/custom.min.js",
+    "inputFiles": [
+      "wwwroot/js/custom.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/wow.min.js",
+    "inputFiles": [
+      "wwwroot/js/wow.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
   }
 ]

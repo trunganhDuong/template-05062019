@@ -57,7 +57,7 @@ namespace Template_RealEstate_20052019.Areas.BackEnd.Controllers
                 return View(utility);
             }
 
-            if(_utilityRepository.Save(utility))
+            if (_utilityRepository.Save(utility))
                 SetFlashMessage("Thêm tiện tích thành công");
             else
                 SetFlashMessage("Tiện ích đã tồn tại. Bạn cần chọn loại tiện ích khác", false);
